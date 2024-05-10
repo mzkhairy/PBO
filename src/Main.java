@@ -1,27 +1,16 @@
-abstract class GenericEntity {
-    private int id;
-    private String name;
+import Tugas2.Product; // Importing from Tugas2
+import Tugas2.Order;   // Importing from Tugas2
 
-    //constructor
-    public GenericEntity(int id, String name){
-        this.id = id;
-        this.name = name;
-    }
+public class Main {
+    public static void main(String[] args) {
+        // Create a Product instance
+        Product exampleProduct = new Product(1, "Bakso", 12000); // id, name, price
 
-    //getter and setter
-    public int getId(){
-        return id;
-    }
-    public void setId(int id){
-        this.id = id;
-    }
-    public String getName(){
-        return name;
-    }
-    public void setName(String name){
-        this.name = name;
-    }
+        // Create an Order instance with the product and a specific quantity
+        Order myOrder = new Order(exampleProduct, 2); // Order for 5 units of the product
 
-    //method for implementation
-    public abstract String getDescription();
+        // Display information about the order
+        System.out.println("Order Description: " + myOrder.getOrderDescription());
+        System.out.println("Total Price: " + myOrder.getTotalPrice());
+    }
 }
