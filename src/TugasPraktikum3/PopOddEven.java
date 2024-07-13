@@ -1,7 +1,7 @@
 package TugasPraktikum3;
 
-public class PopOdd {
-    int[] popodd(int[] arr) {
+public class PopOddEven {
+    int[] popoddeven(int[] arr) {
         System.out.println("Odd numbers in array");
         int i;
         int temp;

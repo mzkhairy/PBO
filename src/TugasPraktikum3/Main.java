@@ -9,7 +9,7 @@ public class Main {
         InsertionSort is = new InsertionSort();
         FindTheLargest fl = new FindTheLargest();
         FindTheSmallest fs = new FindTheSmallest();
-        PopOdd po = new PopOdd();
+        PopOddEven po = new PopOddEven();
         Scanner sc = new Scanner(System.in);
 
         // Take the array size from the user
@@ -49,6 +49,6 @@ public class Main {
         System.out.println("Selection Sorted array");
         pa.PrintArray(ob.selsort(arr));
 
-        po.popodd(arr);
+        po.popoddeven(arr);
     }
 }
